@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
+:root {
+    --green: #6F903C;
+    --yellow: #FCD203;
+    --blue: #81B8C2;
+    --mid-blue: #2E7884;
+    --dark-blue: #2C2E50;
+    --dark-brown: #39220F;
+    --brown: #39220F;
+    --dark-font: #7c6f64;
+    --light-font: #ebdbb2;
+}
+
 html {
     font-size: 18px;
+    color: var(--dark-blue);
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+
 }
 
