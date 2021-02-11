@@ -45,22 +45,6 @@
 
 }
 
-.tu-header__form label {
-    font-weight: bold;
-}
-
-.tu-header__form input {
-    width: 100%;
-    border: 2px solid var(--yellow);
-    border-radius: 3px;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-
-.tu-header__form input:focus {
-    border: 2px solid var(--green);
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .tu-header {

@@ -20,6 +20,10 @@ function Button(props) {
         type = props.type;
     }
 
+    if (props.displayBlock) {
+        classes.push("tu-btn--block");
+    }
+
     return (
         <button
             className={classes.join(" ")}
@@ -37,6 +41,7 @@ Button.propTypes = {
     type: PropTypes.oneOf(["button", "submit", "reset"]),
     value: PropTypes.string,
     disabled: PropTypes.bool,
+    displayBlock: PropTypes.bool,
 };
 
 export default Button;

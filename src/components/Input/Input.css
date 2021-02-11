@@ -1,0 +1,24 @@
+.tu-label {
+    font-weight: bold;
+}
+
+.tu-input {
+    width: 100%;
+    border: 2px solid var(--yellow);
+    border-radius: 3px;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.tu-input:focus {
+    border: 2px solid var(--green);
+    outline: none;
+}
+
+.tu-input--invalid, .tu-input--invalid:focus {
+    border: 2px solid red;
+}
+
+.tu-input_feedback {
+    color: red;
+}

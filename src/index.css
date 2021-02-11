@@ -30,19 +30,23 @@ body {
 /* Spacing
  ***********/
 .tu-mt {
-    margin-top: 10px;
+    margin-top: 5px;
+    display:block;
 }
 
 .tu-mb {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    display:block;
 }
 
 .tu-ml {
-    margin-left: 10px;
+    margin-left: 5px;
+    display:block;
 }
 
 .tu-mr {
-    margin-right: 10px;
+    margin-right: 5px;
+    display:block;
 }
 
 /* Font sizes 
