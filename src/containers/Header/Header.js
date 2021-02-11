@@ -1,6 +1,7 @@
 import "./Header.css";
 import berty from "../../images/berty.png";
 import Button from "../../components/Button/Button";
+import Gap from "../../components/Gap/Gap";
 
 function Header() {
     return (
@@ -19,10 +20,11 @@ function Header() {
                     sunt reiciendis.
                 </p>
                 <form className="tu-header__form">
-                    <label for="url_input">
+                    <label htmlFor="url_input">
                         Enter a long URL to make it a teenyURL
                     </label>
                     <input type="text" id="url_input" />
+                    <Gap />
                     <Button>Create</Button>
                 </form>
             </div>

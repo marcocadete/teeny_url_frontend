@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./Button.css";
 
 function Button(props) {
@@ -30,5 +31,12 @@ function Button(props) {
         </button>
     );
 }
+
+Button.propTypes = {
+    color: PropTypes.string,
+    type: PropTypes.oneOf(["button", "submit", "reset"]),
+    value: PropTypes.string,
+    disabled: PropTypes.bool,
+};
 
 export default Button;
