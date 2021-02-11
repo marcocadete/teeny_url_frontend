@@ -5,13 +5,15 @@
 }
 
 :root {
-    --green: #6F903C;
+    --green: #A1BE38;
+    --dark-green: #6B8C39;
     --yellow: #FCD203;
+    --dark-yellow: #E3BD03;
     --blue: #81B8C2;
     --mid-blue: #2E7884;
     --dark-blue: #2C2E50;
-    --dark-brown: #39220F;
-    --brown: #39220F;
+    --brown: #984320;
+    --dark-brown: #836C59;
     --dark-font: #7c6f64;
     --light-font: #ebdbb2;
 }
@@ -23,6 +25,44 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-
 }
 
+/* Spacing
+ ***********/
+.tu-mt {
+    margin-top: 10px;
+}
+
+.tu-mb {
+    margin-bottom: 10px;
+}
+
+.tu-ml {
+    margin-left: 10px;
+}
+
+.tu-mr {
+    margin-right: 10px;
+}
+
+/* Font sizes 
+ **************/
+.tu-f-xs {
+    font-size: 10px;
+}
+
+.tu-f-sm {
+    font-size: 12px;
+}
+
+.tu-f-md {
+    font-size: 16px;
+}
+
+.tu-f-lg {
+    font-size: 20px;
+}
+
+.tu-f-xl {
+    font-size: 24px;
+}

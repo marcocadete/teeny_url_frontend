@@ -1,0 +1,55 @@
+.tu-btn {
+    border: none;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.tu-btn--block {
+    display: block !important;
+}
+
+.tu-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.tu-btn:disabled:hover {
+    background-color: var(--green);
+}
+
+.tu-btn--green {
+    background-color: var(--green);
+}
+
+.tu-btn--green:hover {
+    background-color: var(--dark-green);
+}
+
+.tu-btn--yellow {
+    background-color: var(--yellow);
+}
+
+.tu-btn--yellow:hover {
+    background-color: var(--dark-yellow);
+}
+
+.tu-btn--blue {
+    background-color: var(--blue);
+}
+
+.tu-btn--blue:hover {
+    background-color: var(--mid-blue);
+}
+
+.tu-btn--brown {
+    background-color: var(--brown);
+    color: #ebdbb2;
+}
+
+.tu-btn--brown:hover {
+    background-color: var(--dark-brown);
+}
