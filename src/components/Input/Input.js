@@ -10,7 +10,7 @@ function Input(props) {
 
     return (
         <>
-            <label className="tu-label" htmlFor={props.id}>
+            <label className="tu-input__label" htmlFor={props.id}>
                 {props.label}
             </label>
             <input
@@ -22,7 +22,7 @@ function Input(props) {
                 id={props.id}
             />
             {props.feedback && (
-                <small className="tu-mb tu-input_feedback">
+                <small className="tu-mb tu-input__feedback">
                     {props.feedback}
                 </small>
             )}

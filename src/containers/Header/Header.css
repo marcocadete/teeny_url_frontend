@@ -1,9 +1,9 @@
 .tu-header {
+    padding: 20px 0px 20px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 100vh;
     margin: 10px;
 }
 
@@ -49,6 +49,7 @@
 @media (min-width: 768px) {
     .tu-header {
         flex-wrap: nowrap;
+        padding: 80px 0px 80px 0px;
     }
 
     .tu-header__image {
@@ -61,5 +62,13 @@
 
     .tu-header__intro h2 {
         margin-top: 0px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .tu-header {
+        flex-wrap: nowrap;
+        padding: 180px 0px 180px 0px;
     }
 }

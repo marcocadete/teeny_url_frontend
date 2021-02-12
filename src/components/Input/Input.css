@@ -1,4 +1,4 @@
-.tu-label {
+.tu-input__label {
     font-weight: bold;
 }
 
@@ -19,6 +19,6 @@
     border: 2px solid red;
 }
 
-.tu-input_feedback {
+.tu-input__feedback {
     color: red;
 }
