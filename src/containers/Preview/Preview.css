@@ -1,0 +1,39 @@
+.tu-preview {
+    padding: 40px 10px;
+}
+
+.tu-preview__content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tu-preview__intro {
+    padding: 10px;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.tu-preview__form {
+    width: 450px;
+    padding: 10px;
+}
+
+@media (min-width: 576px) {
+    .tu-preview__content{
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1395px) {
+    .tu-preview__intro {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1469px) {
+    .tu-preview__intro {
+        margin-right: 60px;
+    }
+}

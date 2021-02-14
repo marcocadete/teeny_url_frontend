@@ -50,16 +50,16 @@ function Navbar() {
                     <a
                         onClick={() => setActiveLink("features")}
                         href="#features"
-                        className={activeLink === "features" ?  "active" : ""}
+                        className={activeLink === "features" ? "active" : ""}
                     >
                         Features
                     </a>
                     <a
-                        onClick={() => setActiveLink("about")}
-                        href="#about"
-                        className={activeLink === "about" ? "active" : ""}
+                        onClick={() => setActiveLink("preview")}
+                        href="#preview"
+                        className={activeLink === "preview" ? "active" : ""}
                     >
-                        About
+                        Preview
                     </a>
                     <a
                         onClick={() => setActiveLink("contact")}

@@ -42,7 +42,7 @@ function Features() {
                 </div>
                 <div className="tu-feature">
                     <img src={Stats} />
-                    <Heading title="Stats"/>
+                    <Heading title="Analytics"/>
                     <p>
                         Consectetur dolor nobis tempora expedita officiis
                         exercitati onem Accusamus officiis quo eaque eum non

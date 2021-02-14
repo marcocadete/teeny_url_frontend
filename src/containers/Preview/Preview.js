@@ -1,15 +1,14 @@
 import { useState } from "react";
-import "./Header.css";
-import berty from "../../images/berty.png";
+import "./Preview.css";
 // Components
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Input from "../../components/Input/Input";
-import Button from "../../components/Button/Button";
 import Gap from "../../components/Gap/Gap";
+import Button from "../../components/Button/Button";
 // Helper Functions
 import { validURL } from "../../HelperFunctions/HelperFunctions";
 
-
-function Header() {
+function Preview() {
     const [value, setValue] = useState("");
     const [isValid, setIsValid] = useState(true);
     const [feedback, setFeedback] = useState(null);
@@ -38,39 +37,34 @@ function Header() {
     }
 
     return (
-        <div className="tu-header">
-            <div className="tu-header__image">
-                <img src={berty} alt="mascot" />
-            </div>
-            <div className="tu-header__intro">
-                <h2>Welcome to</h2>
-                <h1>teenyURL!</h1>
-                <p>
-                    Consectetur dolor nobis tempora expedita officiis exercitati
-                    onem Accusamus officiis quo eaque eum non Corporis ea
-                    repellend us reprehenderit voluptate illum repellendus
-                    aliquam Expedita a ccusantium quaerat placeat ipsam quae! Ut
-                    sunt reiciendis.
+        <section id="preview" className="tu-preview">
+            <SectionTitle title="Preview" />
+            <div className="tu-preview__content">
+                <p className="tu-preview__intro">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <form onSubmit={handleSubmit} className="tu-header__form">
+                <form onSubmit={handleSubmit} className="tu-preview__form">
                     <Input
                         isValid={isValid}
                         feedback={feedback}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={value}
-                        label="Enter a long URL to make it a teenyURL"
+                        label="Enter a teenyURL to view the long URL"
                         type="text"
-                        id="url_input"
+                        id="teeny_input"
                     />
                     <Gap />
                     <Button type="submit" displayBlock={true}>
-                        Create
+                        Preview
                     </Button>
                 </form>
             </div>
-        </div>
+        </section>
     );
 }
 
-export default Header;
+export default Preview;
