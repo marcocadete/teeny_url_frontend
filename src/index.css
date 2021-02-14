@@ -28,6 +28,40 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Color
+ *********/
+.tu-color--green {
+    color: var(--green);
+}
+
+.tu-color--dark-green {
+    color: var(--dark-green);
+}
+
+.tu-color--yellow {
+    color: var(--yellow);
+}
+
+.tu-color--dark-yellow {
+    color: var(--dark-yellow);
+}
+
+.tu-color--blue {
+    color: var(--blue);
+}
+
+.tu-color--dark-blue {
+    color: var(--dark-blue);
+}
+
+.tu-color--brown {
+    color: var(--brown);
+}
+
+.tu-color--dark-brown {
+    color: var(--dark-brown);
+}
+
 /* Spacing
  ***********/
 .tu-mt {

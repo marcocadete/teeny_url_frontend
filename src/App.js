@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./containers/Navbar/Navbar";
 import Header from "./containers/Header/Header";
 import Features from "./containers/Features/Features";
+import Footer from "./containers/Footer/Footer";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Navbar />
             <Header />
             <Features />
+            <Footer />
         </div>
     );
 }
