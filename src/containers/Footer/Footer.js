@@ -8,7 +8,7 @@ function Footer() {
         <footer className="tu-footer">
             <Heading title="Contact" color="dark-yellow" />
             <div className="tu-footer__content">
-                <div className="tu-footer__contact">
+                <div id="contact" className="tu-footer__contact">
                     <a href="https://github.com/marcocadete">
                         <img src={githubLogo} />
                         Get in touch with the developer on Github

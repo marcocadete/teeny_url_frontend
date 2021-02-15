@@ -2,9 +2,11 @@ import { useState } from "react";
 import "./Navbar.css";
 import Logo from "../../images/logo.png";
 
-function Navbar() {
+function Navbar(props) {
+    console.log(props);
     const [selected, setSelected] = useState(false);
-    const [activeLink, setActiveLink] = useState("");
+    const [activeLink, setActiveLink] = useState("home");
+    const [visableHeader, visableFeatures, visablePreview] = props.sections;
 
     return (
         <nav className="tu-nav">
@@ -48,23 +50,42 @@ function Navbar() {
                 </div>
                 <div className="tu-nav__links">
                     <a
+                        onClick={() => setActiveLink("home")}
+                        href="/"
+                        className={
+                            activeLink === "home" || visableHeader
+                                ? "active"
+                                : ""
+                        }
+                    >
+                        Home
+                    </a>
+                    <a
                         onClick={() => setActiveLink("features")}
                         href="#features"
-                        className={activeLink === "features" ? "active" : ""}
+                        className={
+                            activeLink === "features" || visableFeatures
+                                ? "active"
+                                : ""
+                        }
                     >
                         Features
                     </a>
                     <a
                         onClick={() => setActiveLink("preview")}
                         href="#preview"
-                        className={activeLink === "preview" ? "active" : ""}
+                        className={
+                            activeLink === "preview" || visablePreview
+                                ? "active"
+                                : ""
+                        }
                     >
                         Preview
                     </a>
                     <a
                         onClick={() => setActiveLink("contact")}
                         href="#contact"
-                        className={activeLink === "contact" ? "active" : ""}
+                        className={activeLink === "contact" && visablePreview ? "active" : ""}
                     >
                         Contact
                     </a>

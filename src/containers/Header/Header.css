@@ -1,10 +1,12 @@
 .tu-header {
-    padding: 20px 0px 20px 0px;
+    min-height: 100vh;
+    padding: 50px 0px 20px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
+    scroll-snap-align: start;
 }
 
 .tu-header__image {

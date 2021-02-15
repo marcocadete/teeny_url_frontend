@@ -1,4 +1,12 @@
+#preview {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
 .tu-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 80px 10px;
 }
 
@@ -11,18 +19,28 @@
 
 .tu-preview__intro {
     padding: 10px;
-    max-width: 650px;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
 .tu-preview__form {
-    width: 450px;
+    max-width: 100%;
     padding: 10px;
 }
 
 @media (min-width: 576px) {
     .tu-preview__content{
         max-width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .tu-preview__intro {
+        max-width: 50%;
+    }
+
+    .tu-preview__form {
+        max-width: 50%;
     }
 }
 
@@ -34,6 +52,6 @@
 
 @media (min-width: 1469px) {
     .tu-preview__intro {
-        margin-right: 60px;
+        /*margin-right: 60px;*/
     }
 }
