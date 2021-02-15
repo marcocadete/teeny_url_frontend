@@ -5,16 +5,16 @@
 }
 
 :root {
-    --green: #A1BE38;
-    --dark-green: #6B8C39;
-    --yellow: #FCD203;
-    --dark-yellow: #E3BD03;
-    --blue: #81B8C2;
-    --mid-blue: #2E7884;
-    --dark-blue: #2C2E50;
+    --green: #a1be38;
+    --dark-green: #6b8c39;
+    --yellow: #fcd203;
+    --dark-yellow: #e3bd03;
+    --blue: #81b8c2;
+    --mid-blue: #2e7884;
+    --dark-blue: #2c2e50;
     --brown: #984320;
-    --washed-brown: #836C59;
-    --dark-brown: #38210E;
+    --washed-brown: #836c59;
+    --dark-brown: #38210e;
     --dark-font: #7c6f64;
     --light-font: #ebdbb2;
 }
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Color
@@ -62,26 +62,53 @@ body {
     color: var(--dark-brown);
 }
 
+/* Links
+ ***********/
+
+/* unvisited link */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--dark-yellow);
+}
+
+/* visited link */
+a:visited {
+    color: var(--green);
+}
+
+/* mouse over link */
+a:hover {
+    color: var(--yellow);
+}
+
+/* selected link */
+a:active {
+    color: var(--blue);
+}
+
 /* Spacing
  ***********/
 .tu-mt {
     margin-top: 5px;
-    display:block;
+    display: block;
 }
 
 .tu-mb {
     margin-bottom: 5px;
-    display:block;
+    display: block;
 }
 
 .tu-ml {
     margin-left: 5px;
-    display:block;
+    display: block;
 }
 
 .tu-mr {
     margin-right: 5px;
-    display:block;
+    display: block;
 }
 
 /* Font sizes 
