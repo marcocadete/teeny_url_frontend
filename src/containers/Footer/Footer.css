@@ -1,11 +1,11 @@
 .tu-footer {
     background-color: var(--dark-blue);
-    padding: 80px 10px;
+    padding: 80px 20px;
 }
 
 .tu-footer__content {
     padding-top: 20px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -21,4 +21,10 @@
     margin-top: 20px;
     color: var(--light-font);
     font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    .tu-footer__content {
+        width: 80%;
+    }
 }
