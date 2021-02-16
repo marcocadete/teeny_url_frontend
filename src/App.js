@@ -14,20 +14,34 @@ function App() {
     const refHeader = useRef();
     const refFeatures = useRef();
     const refPreview = useRef();
+    const refFooter = useRef();
 
+    // Observer which returns a boolean value if ref element is visable.
     const headerOnScreen = useOnScreen(refHeader);
     const featuresOnScreen = useOnScreen(refFeatures);
     const previewOnScreen = useOnScreen(refPreview);
+    const footerOnScreen = useOnScreen(refFooter);
 
-    const sectionsOnScreen = [headerOnScreen, featuresOnScreen, previewOnScreen];
+    // sections has been created to pass all ref elements to the navbar,
+    // for handling scroll to ref element.
+    const sections = [refHeader, refFeatures, refPreview, refFooter];
+
+    // SectionsOnScreen has been created to pass boolean values on whether
+    // the ref element is in view, to enable active classes on the navbar.
+    const sectionsOnScreen = [
+        headerOnScreen,
+        featuresOnScreen,
+        previewOnScreen,
+        footerOnScreen,
+    ];
 
     return (
         <div className="tu-app">
-            <Navbar sections={sectionsOnScreen} />
-            <Header ref={refHeader}/>
-            <Features ref={refFeatures}/>
-            <Preview ref={refPreview}/>
-            <Footer />
+            <Navbar sections={sections} sectionsOnScreen={sectionsOnScreen} />
+            <Header ref={refHeader} />
+            <Features ref={refFeatures} />
+            <Preview ref={refPreview} />
+            <Footer ref={refFooter} />
         </div>
     );
 }
@@ -45,7 +59,7 @@ function useOnScreen(ref, rootMargin = "0px", threshold = 0.5) {
             },
             {
                 rootMargin,
-                threshold
+                threshold,
             }
         );
         if (ref.current) {

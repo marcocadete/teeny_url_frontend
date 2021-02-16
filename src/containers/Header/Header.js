@@ -8,7 +8,6 @@ import Gap from "../../components/Gap/Gap";
 // Helper Functions
 import { validURL } from "../../HelperFunctions/HelperFunctions";
 
-
 const Header = React.forwardRef((props, ref) => {
     const [value, setValue] = useState("");
     const [isValid, setIsValid] = useState(true);
@@ -38,7 +37,7 @@ const Header = React.forwardRef((props, ref) => {
     }
 
     return (
-        <div className="tu-header" ref={ref}>
+        <div id="home" className="tu-header" ref={ref}>
             <div className="tu-header__image">
                 <img src={berty} alt="mascot" />
             </div>

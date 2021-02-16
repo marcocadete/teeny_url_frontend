@@ -1,11 +1,16 @@
 .tu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    scroll-snap-align: start;
     background-color: var(--dark-blue);
     padding: 80px 20px;
 }
 
 .tu-footer__content {
     padding-top: 20px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -25,6 +30,6 @@
 
 @media (min-width: 576px) {
     .tu-footer__content {
-        width: 80%;
+        max-width: 80%;
     }
 }

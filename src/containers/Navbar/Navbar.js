@@ -5,8 +5,13 @@ import Logo from "../../images/logo.png";
 function Navbar(props) {
     console.log(props);
     const [selected, setSelected] = useState(false);
-    const [activeLink, setActiveLink] = useState("home");
-    const [visableHeader, visableFeatures, visablePreview] = props.sections;
+    const [refHeader, refFeatures, refPreview, refFooter] = props.sections;
+    const [
+        visableHeader,
+        visableFeatures,
+        visablePreview,
+        visableContact,
+    ] = props.sectionsOnScreen;
 
     return (
         <nav className="tu-nav">
@@ -17,7 +22,7 @@ function Navbar(props) {
                     }
                 >
                     <span className="tu-nav__logo">
-                        <a href="/">
+                        <a href="#home">
                             <img src={Logo} />
                         </a>
                     </span>
@@ -50,42 +55,30 @@ function Navbar(props) {
                 </div>
                 <div className="tu-nav__links">
                     <a
-                        onClick={() => setActiveLink("home")}
-                        href="/"
-                        className={
-                            activeLink === "home" || visableHeader
-                                ? "active"
-                                : ""
-                        }
+                        onClick={() => refHeader.current.scrollIntoView()}
+                        href="#0"
+                        className={visableHeader ? "active" : ""}
                     >
                         Home
                     </a>
                     <a
-                        onClick={() => setActiveLink("features")}
-                        href="#features"
-                        className={
-                            activeLink === "features" || visableFeatures
-                                ? "active"
-                                : ""
-                        }
+                        onClick={() => refFeatures.current.scrollIntoView()}
+                        href="#0"
+                        className={visableFeatures ? "active" : ""}
                     >
                         Features
                     </a>
                     <a
-                        onClick={() => setActiveLink("preview")}
-                        href="#preview"
-                        className={
-                            activeLink === "preview" || visablePreview
-                                ? "active"
-                                : ""
-                        }
+                        onClick={() => refPreview.current.scrollIntoView()}
+                        href="#0"
+                        className={visablePreview ? "active" : ""}
                     >
                         Preview
                     </a>
                     <a
-                        onClick={() => setActiveLink("contact")}
-                        href="#contact"
-                        className={activeLink === "contact" && visablePreview ? "active" : ""}
+                        onClick={() => refFooter.current.scrollIntoView()}
+                        href="#0"
+                        className={visableContact ? "active" : ""}
                     >
                         Contact
                     </a>
