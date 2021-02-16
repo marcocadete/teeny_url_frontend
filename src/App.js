@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -8,6 +9,7 @@ import Header from "./containers/Header/Header";
 import Features from "./containers/Features/Features";
 import Preview from "./containers/Preview/Preview";
 import Footer from "./containers/Footer/Footer";
+import NotFound from "./containers/NotFound/NotFound";
 
 function App() {
     // Ref for elements that we want to detect whether on screen.
@@ -37,11 +39,23 @@ function App() {
 
     return (
         <div className="tu-app">
-            <Navbar sections={sections} sectionsOnScreen={sectionsOnScreen} />
-            <Header ref={refHeader} />
-            <Features ref={refFeatures} />
-            <Preview ref={refPreview} />
-            <Footer ref={refFooter} />
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Navbar
+                            sections={sections}
+                            sectionsOnScreen={sectionsOnScreen}
+                        />
+                        <Header ref={refHeader} />
+                        <Features ref={refFeatures} />
+                        <Preview ref={refPreview} />
+                        <Footer ref={refFooter} />
+                    </Route>
+                    <Route path="*">
+                        <NotFound />
+                    </Route>
+                </Switch>
+            </Router>
         </div>
     );
 }

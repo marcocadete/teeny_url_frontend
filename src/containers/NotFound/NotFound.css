@@ -1,0 +1,10 @@
+.tu-notfound {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tu-notfound__content h2 {
+    font-weight: 900;
+}

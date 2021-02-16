@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "./Navbar.css";
 import Logo from "../../images/logo.png";
 
@@ -22,7 +23,10 @@ function Navbar(props) {
                     }
                 >
                     <span className="tu-nav__logo">
-                        <a href="#home">
+                        <a
+                            onClick={() => refHeader.current.scrollIntoView()}
+                            href="#0"
+                        >
                             <img src={Logo} />
                         </a>
                     </span>
@@ -87,5 +91,12 @@ function Navbar(props) {
         </nav>
     );
 }
+
+Navbar.propTypes = {
+    sections: PropTypes.arrayOf(
+        PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+    ),
+    sectionsOnScreen: PropTypes.arrayOf(PropTypes.bool),
+};
 
 export default Navbar;

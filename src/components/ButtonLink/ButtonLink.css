@@ -1,0 +1,54 @@
+.tu-btn-link {
+    border: none;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    border-radius: 3px;
+    margin: 20px 0px;
+
+}
+
+a.tu-btn-link,
+a.tu-btn-link:link,
+a.tu-btn-link:visited,
+a.tu-btn-link:hover,
+a.tu-btn-link:active {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tu-btn-link--green {
+    background-color: var(--green);
+}
+
+.tu-btn-link--green:hover {
+    background-color: var(--dark-green);
+}
+
+.tu-btn-link--yellow {
+    background-color: var(--yellow);
+}
+
+.tu-btn-link--yellow:hover {
+    background-color: var(--dark-yellow);
+}
+
+.tu-btn-link--blue {
+    background-color: var(--blue);
+}
+
+.tu-btn-link--blue:hover {
+    background-color: var(--mid-blue);
+}
+
+.tu-btn-link--brown {
+    background-color: var(--brown);
+    color: #ebdbb2;
+}
+
+.tu-btn-link--brown:hover {
+    background-color: var(--washed-brown);
+}
