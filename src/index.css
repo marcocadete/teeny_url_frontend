@@ -31,6 +31,10 @@ body {
 
 /* Color
  *********/
+.tu-color--light {
+    color: var(--light-font);
+}
+
 .tu-color--green {
     color: var(--green);
 }

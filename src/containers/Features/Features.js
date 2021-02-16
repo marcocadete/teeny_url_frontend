@@ -12,7 +12,7 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 const Features = React.forwardRef((props, ref) => {
     return (
         <section id="features" ref={ref}>
-            <div>
+            <div className="tu-features__container">
                 <SectionTitle title="Features" />
                 <div className="tu-features">
                     <div className="tu-feature">

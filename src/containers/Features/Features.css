@@ -8,6 +8,11 @@
     scroll-snap-align: start;
 }
 
+.tu-features__container {
+    width: 100%;
+
+}
+
 .tu-features {
     display: flex;
     flex-direction: row;
@@ -22,7 +27,6 @@
     font-size: 17px;
     width: 100%;
     margin: 20px;
-
 }
 
 .tu-feature p {

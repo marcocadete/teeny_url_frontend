@@ -8,10 +8,15 @@
     padding: 80px 20px;
 }
 
-.tu-footer__content {
-    padding-top: 20px;
+.tu-footer__container {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
+}
+
+.tu-footer__content {
+    padding-top: 20px;
 }
 
 .tu-footer__content img {
@@ -20,16 +25,18 @@
 
 .tu-footer__content a {
     font-style: italic;
+    font-weight: bold;
 }
 
 .tu-footer__copyright {
     margin-top: 20px;
     color: var(--light-font);
     font-size: 12px;
+    margin-top: 40px;
 }
 
 @media (min-width: 576px) {
-    .tu-footer__content {
+    .tu-footer__container {
         max-width: 80%;
     }
 }
