@@ -23,7 +23,7 @@
     margin-bottom: 20px;
 }
 
-.tu-preview__form {
+.tu-preview__form-container {
     max-width: 100%;
     padding: 10px;
 }
@@ -39,7 +39,7 @@
         max-width: 50%;
     }
 
-    .tu-preview__form {
+    .tu-preview__form-container {
         max-width: 50%;
     }
 }

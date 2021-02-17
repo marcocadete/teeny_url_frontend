@@ -5,6 +5,7 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Input from "../../components/Input/Input";
 import Gap from "../../components/Gap/Gap";
 import Button from "../../components/Button/Button";
+import ButtonLink from "../../components/ButtonLink/ButtonLink";
 // Helper Functions
 import { validURL } from "../../HelperFunctions/HelperFunctions";
 
@@ -12,6 +13,7 @@ const Preview = React.forwardRef((props, ref) => {
     const [value, setValue] = useState("");
     const [isValid, setIsValid] = useState(true);
     const [feedback, setFeedback] = useState(null);
+    const [preview, setPreview] = useState("");
 
     function handleBlur() {
         if (value === "") {
@@ -48,22 +50,30 @@ const Preview = React.forwardRef((props, ref) => {
                         exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.
                     </p>
-                    <form onSubmit={handleSubmit} className="tu-preview__form">
-                        <Input
-                            isValid={isValid}
-                            feedback={feedback}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={value}
-                            label="Enter a teenyURL to view the long URL"
-                            type="text"
-                            id="teeny_input"
-                        />
-                        <Gap />
-                        <Button type="submit" displayBlock={true}>
-                            Preview
-                        </Button>
-                    </form>
+                    <div className="tu-preview__form-container">
+                        <ButtonLink href="https://blog.marcocadete@gmail.com">
+                            https://blog.marcocadete.com
+                        </ButtonLink>
+                        <form
+                            onSubmit={handleSubmit}
+                            className="tu-preview__form"
+                        >
+                            <Input
+                                isValid={isValid}
+                                feedback={feedback}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={value}
+                                label="Enter a teenyURL to view the long URL"
+                                type="text"
+                                id="teeny_input"
+                            />
+                            <Gap />
+                            <Button type="submit" displayBlock={true}>
+                                Preview
+                            </Button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
